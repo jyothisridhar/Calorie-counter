@@ -1,3 +1,6 @@
+import {h, diff, patch} from 'virtual-dom';
+import createElement from 'virtual-dom/create-element';
+
 function app(initModel, update, view, node){
 	let model = initModel;
 	let currentView = view(dispatch, model);
@@ -12,3 +15,5 @@ function app(initModel, update, view, node){
 		currentView = updatedView;
 	}
 }
+
+export default app;
