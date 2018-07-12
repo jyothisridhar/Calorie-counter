@@ -3,7 +3,8 @@ const initModel = {
 	calories: 480,
 	showForm : false,
 	nextId: 0,
-	editId: null
+	editId: null,
+	meals:[]
 }
 
 export default initModel;
